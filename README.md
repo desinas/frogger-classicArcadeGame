@@ -2,9 +2,17 @@ Frogger a classic Arcade Game clone :frog:
 ==========================================
 
 Project on behalf of the Grow with Google scholarship 
-in association with online university Udaciity and its nano-degree program Front-End NanoDegree.
+in association with online university Udacity 
+and its nano-degree program Front-End NanoDegree.
 
-The game starts immediately with index page opening. The main purpose of the game is to drive the charachter of the player, by moving it in the game deck and avoiding a collision with the vehicles-bugs. The speed of the bugs is increasing by time, so the passing from the street is difficult in the end of the game.
+The game starts immediately with index page opening. The main purpose of the game is 
+to drive the charachter of the player, by moving it in the game deck and avoiding a collision 
+with the vehicles-bugs. The speed of the bugs is increasing by time, so the passing from 
+the street is difficult in the end of the game.
+- Use the four arrow keys on keyboard to drive the character from the bottom of the game deck
+to the top of the game deck.
+- Avoid the bugs that passing the street, if a collision happens the player loses and start from the bottom again.
+- The Player wins by reaching the top of the game deck where the water place exists.
 
 Object-oriented programming used to develop the parts of the game:
 - Player can move to the four directions using keyboard arrow keys, by pressing and releasing a key, the move then is done.

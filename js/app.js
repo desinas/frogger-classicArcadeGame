@@ -1,3 +1,5 @@
+'use strict;'
+
 /**
 * @description Representation of enemy class - bug vehicles
 * @constractor Function that produce a new enemy on the game deck 
@@ -61,7 +63,7 @@ var Player = function (x, y) {
 */
 Player.prototype.update = function(dt) {
     if (this.y < 0) {
-        alert("You did it!");
+        alert('You did it!');
         this.reset(202, 388);
     }
 };
@@ -105,16 +107,16 @@ var allEnemies = [
 ];
 
 // Instantiation of the player object
-var player = new Player(0, 469);
+var player = new Player(202, 388);
 
 // Check collisions function to check if the player is crashed by an enemy
 function checkCollisions(allEnemies, player) {
     for (var i = 0; i < allEnemies.length; i++) {
-        if (allEnemies[i].x < player.x + player.width/3 &&
-            allEnemies[i].x + allEnemies[i].width/3 > player.x &&
+        if (allEnemies[i].x < player.x + player.width-20 &&
+            allEnemies[i].x + allEnemies[i].width-20 > player.x &&
             allEnemies[i].y < player.y + player.height &&
             allEnemies[i].height + allEnemies[i].y > player.y) {
-            player.reset(0, 469);
+            player.reset(202, 388);
         }
     }
 }
